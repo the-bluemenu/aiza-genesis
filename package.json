@@ -1,0 +1,22 @@
+{
+  "name": "aiza-genesis",
+  "private": true,
+  "version": "0.0.0",
+  "description": "The sovereign monorepo for the AIZA786Jackfrut OS.",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "docker:up": "cd infra/docker && docker-compose up -d",
+    "docker:down": "cd infra/docker && docker-compose down"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.1.4",
+  "author": "Sheikh Jubaer Ahammed (Architect)"
+}
